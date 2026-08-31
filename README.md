@@ -28,12 +28,10 @@ $$
 r_t(x) = w_t^\top x.
 $$
 
-Given two items \(x_A\) and \(x_B\), pairwise preferences are generated using a Bradley-Terry style model:
+Given two items $x_A$ and $x_B$, pairwise preferences are generated using a Bradley-Terry style model:
 
 $$
-P(A \succ B)
-=
-\sigma\left(w_t^\top(x_A-x_B)\right).
+P(A \succ B) = \sigma\left(w_t^\top(x_A-x_B)\right).
 $$
 
 At an unknown change point, the environment may change.
@@ -94,4 +92,5 @@ Possible later extensions include nonlinear reward models, learned representatio
 Research and initial implementation in progress.
 
 Author: Marvin Ernst
+
 Date: August 31, 2026
