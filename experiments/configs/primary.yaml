@@ -1,0 +1,31 @@
+# Primary controlled experiment. Values are intentionally modest for a CPU run.
+dimension: 5
+training_variances: [1.0, 0.50, 0.20, 0.08, 0.03]
+true_weights: [0.80, -0.50, 0.35, 0.20, -0.10]
+
+n_fit: 2000
+n_calibration: 1000
+horizon: 1500
+# Zero-based index of the first changed observation (monitoring time 601).
+change_point: 600
+transition_width: 0
+
+scenario: covariate
+# Both angles are measured relative to the largest eigenvector of the fitted
+# posterior covariance. They are experimental controls, not detector inputs.
+covariate_alignment_degrees: 0.0
+preference_alignment_degrees: 45.0
+mean_shift_magnitude: 0.0
+covariance_shift_magnitude: 0.50
+preference_shift_magnitude: 0.75
+
+prior_precision: 1.0
+quadrature_order: 30
+cusum_allowance: 0.25
+false_alarm_probability: 0.05
+null_calibration_runs: 250
+rolling_accuracy_window: 100
+risk_evaluation_samples: 10000
+failure_excess_risk_increase: 0.005
+
+seed: 20260905
