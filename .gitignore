@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.pytest_cache/
+pytest-of-root/
+.ruff_cache/
+*.egg-info/
+
+results/
+/paper
+
+.DS_Store
+/setup
+
